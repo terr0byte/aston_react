@@ -1,0 +1,12 @@
+div[data-component='post-list'] {
+    margin: 10px auto 10px auto;
+    padding: 5px;
+    justify-self: center;
+    border-radius: .625rem;
+    &[data-theme='light'] {
+        background-color: var(--secondary-light);
+    }
+    &[data-theme='dark'] {
+        background-color: var(--primary-dark);
+    }
+}

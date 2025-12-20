@@ -1,0 +1,14 @@
+div[data-component='main-layout'] {
+    display: flex;
+    flex-direction: column;
+
+    &[data-theme='light'] {
+        background-color: var(--primary-light);
+        color: var(--text-light);
+    }
+
+    &[data-theme='dark'] {
+        background-color: var(--primary-dark);
+        color: var(--text-dark);
+    }
+}

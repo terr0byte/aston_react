@@ -1,0 +1,44 @@
+div[data-component='modal-overlay'] {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div[data-component='modal-content'] {
+  display: flex;
+  width: 600px;
+  height: auto;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 8px;
+
+  &[data-theme='light'] {
+    background: var(--primary-light);
+    color: var(--text-light);
+  }
+
+  &[data-theme='dark'] {
+    background: var(--primary-dark);
+    color: var(--text-dark);
+  }
+}
+
+div[data-component='modal-header'] {
+  align-self: center;
+  margin-bottom: 20px;
+}
+
+div[data-component='modal-body'] {
+  align-self: center;
+  margin-bottom: 40px;
+}
+
+div[data-component='modal-footer'] {
+  align-self: center;
+}
