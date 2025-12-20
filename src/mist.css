@@ -1,0 +1,37 @@
+@import './shared/layouts/MainLayout.css';
+@import './shared/ui/Modal/Modal.css';
+@import './shared/ui/Button/Button.css';
+@import './widgets/LayoutHeader/Header.css';
+@import './widgets/LayoutFooter/Footer.css';
+@import './widgets/PostList/PostList.css';
+@import './entities/post/ui/PostCard.css';
+
+:root {
+    --primary-light: #fff;
+    --secondary-light: #fff;
+    --extra-light: #c6d2ff;
+    --primary-dark:  #1e2939;
+    --secondary-dark: #101828;
+    --text-light: #101828;
+    --text-dark: #fafafa;
+    --border-color: #4f39f6;
+}
+
+#root{      
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+main[data-component='main'] {
+    flex-grow: 1;
+    &[data-theme='light'] {
+        background-color: var(--extra-light);
+    }
+    &[data-theme='dark'] {
+        background-color: var(--secondary-dark);
+    }
+}

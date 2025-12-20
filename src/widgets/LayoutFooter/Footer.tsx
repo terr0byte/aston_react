@@ -1,3 +1,6 @@
+import { useTheme } from "../../shared/lib/theme/useTheme"
+
 export default function Footer() {
-    return <></>
+    const { theme } = useTheme();
+    return <div data-component='footer' data-theme={theme}></div>
 }

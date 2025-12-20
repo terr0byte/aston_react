@@ -1,0 +1,11 @@
+div[data-component='footer'] {
+    min-height: 90px;
+
+    &[data-theme='light'] {
+        background-color: var(--primary-light)
+    }
+
+    &[data-theme='dark'] {
+        background-color: var(--primary-dark);
+    }
+}

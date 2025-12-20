@@ -1,3 +1,5 @@
+import { useTheme } from "../../../shared/lib/theme/useTheme"
+
 export type Post = {
     userId: number,
     id: number,
@@ -6,7 +8,8 @@ export type Post = {
 }
 
 export function PostCard({title, body}: Post) {
-    return <div>
+    const {theme} = useTheme();
+    return <div data-component='card' data-theme={theme}>
         <h2>{title}</h2>
         <p>{body}</p>
     </div>
