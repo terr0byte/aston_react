@@ -7,13 +7,14 @@ button[data-component='button'] {
     font-family: inherit;
     background-color: #1a1a1a;
     cursor: pointer;
-    transition: border-color 0.25s;
 
     &[data-theme='light'] {
         background-color: var(--extra-light);
+        color: var(--text-light);
     }
 
     &[data-theme='dark'] {
-        background-color: var(--secondary-dark)
+        background-color: var(--extra-dark);
+        color: var(--text-dark);
     }
 }
