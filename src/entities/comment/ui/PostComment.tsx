@@ -1,13 +1,6 @@
 import React from 'react'
 import { useTheme } from '../../../shared/lib/theme/useTheme';
-
-export type Comment = {
-    postId: number;
-    id: number;
-    name: string;
-    email: string;
-    body: string;
-}
+import type { Comment } from '../../../utils/types';
 
 interface Props {
     comment: Comment;
