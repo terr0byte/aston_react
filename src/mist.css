@@ -5,6 +5,7 @@
 @import './widgets/LayoutFooter/Footer.css';
 @import './widgets/PostList/PostList.css';
 @import './entities/post/ui/PostCard.css';
+@import './entities/comment/ui/PostComment.css';
 
 :root {
     --primary-light: #fff;
@@ -13,6 +14,7 @@
     --primary-dark:  #1e2939;
     --secondary-dark: #101828;
     --text-light: #101828;
+    --extra-dark: #071022;
     --text-dark: #fafafa;
     --border-color: #4f39f6;
 }

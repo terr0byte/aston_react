@@ -1,7 +1,7 @@
 import '../../mist.css';
 import Footer from '../../widgets/LayoutFooter/Footer';
 import Header from '../../widgets/LayoutHeader/Header';
-import PostList from '../../widgets/PostList/PostList';
+import { PostListWithLoading } from '../../widgets/PostList/PostList';
 import { useTheme } from '../lib/theme/useTheme';
 
 export default function MainLayout() {
@@ -36,7 +36,7 @@ export default function MainLayout() {
 
     return <div data-component='main-layout' data-theme={theme}>
         <Header />
-        <main data-component='main' data-theme={theme}><PostList posts={mockPosts} /></main>
+        <main data-component='main' data-theme={theme}><PostListWithLoading initialPosts={mockPosts} /></main>
         <Footer />
     </div>
 }

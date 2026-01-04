@@ -1,0 +1,14 @@
+div[data-component='comment'] {
+    margin: 10px 0;
+    padding-left: 10px;
+
+    &[data-theme='light'] {
+        border-left: 2px solid var(--border-color);
+        color: var(--text-light);
+    }
+
+    &[data-theme='dark'] {
+        border-left: 2px solid var(--border-color);
+        color: var(--text-dark);
+    }
+}
