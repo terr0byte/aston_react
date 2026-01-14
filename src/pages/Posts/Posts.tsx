@@ -3,6 +3,6 @@ import { PostListWithLoading } from "../../widgets/PostList/PostList";
 
 export function Posts() {
 
-    const { posts } = usePosts();
-    return (<PostListWithLoading initialPosts={posts} />)
+    const { data, isLoading } = usePosts();
+    return (<PostListWithLoading initialPosts={data} isLoading={isLoading} />)
 }

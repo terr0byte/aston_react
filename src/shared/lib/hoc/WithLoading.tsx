@@ -3,21 +3,13 @@ import type { ComponentType } from "react";
 
 type WithLoadingProps = {
     loadingText?: string;
+    isLoading?: boolean;
 };
 
 function withLoading<T extends object>(WrappedComponent: ComponentType<T>) {
     return function ComponentWithLoading(props: T & WithLoadingProps) {
-        const [isLoading, setIsLoading] = useState(true);
 
-        useEffect(() => {
-            const timer = setTimeout(() => {
-                setIsLoading(false);
-            }, 1000)
-
-            return () => clearTimeout(timer)
-        }, []);
-
-        if (isLoading) {
+        if (props.isLoading) {
             return <div>{props.loadingText || 'Загрузка...'}</div>
         };
 
