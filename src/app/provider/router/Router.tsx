@@ -1,6 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
 import { Albums } from "../../../pages/Albums/Albums";
-import { Comments } from "../../../pages/Comments/Comments";
 import { Photos } from "../../../pages/Photos/Photos";
 import { Posts } from "../../../pages/Posts/Posts";
 import { Todos } from "../../../pages/Todos/Todos";
