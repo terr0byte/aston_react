@@ -1,6 +1,6 @@
 import { useState, memo } from 'react';
 import { filterByLength } from '../lib/filterByLength';
-import type { Post } from '../../../entities/post/ui/PostCard';
+import type { Post } from '../../../utils/types';
 import Button from '../../../shared/ui/Button/Button';
 
 interface Props<T> {

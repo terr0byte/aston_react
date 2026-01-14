@@ -1,4 +1,4 @@
-import type { Post } from "../../entities/post/ui/PostCard"
+import type { Post } from "../../utils/types"
 import { PostCard } from "../../entities/post/ui/PostCard"
 import withLoading from "../../shared/lib/hoc/WithLoading";
 import { useTheme } from "../../shared/lib/theme/useTheme";
