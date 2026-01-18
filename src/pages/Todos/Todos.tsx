@@ -1,3 +1,5 @@
+import { TodoList } from "../../widgets/TodoList/TodoList";
+
 export function Todos() {
-    return (<div>Тудушки</div>)
+    return (<TodoList />)
 }

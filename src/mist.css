@@ -6,6 +6,7 @@
 @import './widgets/PostList/PostList.css';
 @import './entities/post/ui/PostCard.css';
 @import './entities/comment/ui/PostComment.css';
+@import './entities/todo/ui/TodoCard.css';
 
 :root {
     --primary-light: #fff;
